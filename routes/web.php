@@ -1,7 +1,12 @@
 <?php
 
+use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// les routes pour la gestion des categories
+
+Route::prefix('/categorie')->group(function () {
+    Route::get('', [CategorieController::class, 'index']);
+})->name('categorie');
+
+
