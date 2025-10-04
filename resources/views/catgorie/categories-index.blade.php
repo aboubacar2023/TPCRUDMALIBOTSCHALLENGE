@@ -16,7 +16,7 @@
             </div>
         @endif
         <div class="mb-4">
-            <a href="categorie_create.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ajouter une Catégorie</a>
+            <a href="{{route('create-categorie')}}" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ajouter une Catégorie</a>
         </div>
 
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
